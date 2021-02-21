@@ -12,5 +12,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2021-02-21
  */
 public interface UserService extends IService<User> {
-
+    /**
+     * 登录方法
+     * @param account
+     * @param password
+     * @return 返回登录生成的token令牌
+     */
+    String login(String account, String password);
 }
