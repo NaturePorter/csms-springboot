@@ -1,5 +1,5 @@
 server:
-  port: 8797
+  port: 8888
   #关闭缓存
 
 spring:

@@ -43,6 +43,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             // 生成jwt令牌
             String jwt = JwtUtil.createJWT(UUID.randomUUID().toString(), account, null);
             // 存入数据库中
+
             // 返回jwt字符串
             return jwt;
 

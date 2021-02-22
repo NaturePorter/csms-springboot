@@ -33,7 +33,7 @@ public class LogAspect {
     /**
      * 以自定义@WebLog注解为切点
      */
-    @Pointcut("@annotation(cn.oncloud.aspect.WebLog)")
+    @Pointcut("@annotation(cn.csms.aspect.WebLog)")
     public void webLog() {
     }
 
