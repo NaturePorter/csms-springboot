@@ -30,9 +30,9 @@ public class UserController {
 
     @PostMapping("/login")
     @WebLog("登录接口")
-    public ResponseEntity login(String account, String password) {
+    public ResponseEntity login(String account, String password, int type) {
         System.out.println("访问一次！");
-        String jwt = userService.login(account, password);
+        String jwt = userService.login(account, password, type);
         return new ResponseEntity<>(ResultBean.ok(ResultConst.LOGIN_SUCC, new JSONObject().fluentPut("token", jwt)),
                 HttpStatus.OK);
     }

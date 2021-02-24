@@ -28,27 +28,38 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     UserService userService;
 
     @Override
-    public String login(String account, String password) {
+    public String login(String account, String password, int type) {
         User user = null;
-        try {
-            LambdaQueryWrapper<User> queryWrapper = Wrappers.<User>lambdaQuery().eq(User::getAccount, account).eq(User::getPassword, password);
-            user = userService.getOne(queryWrapper);
-            if (user == null) {
+        String jwt = null;
+        // type == 1 时为管理员登录
+        if (type == 1) {
+            try {
+                LambdaQueryWrapper<User> queryWrapper = Wrappers.<User>lambdaQuery().eq(User::getAccount, account).eq(User::getPassword, password);
+                user = userService.getOne(queryWrapper);
+                if (user == null) {
+                    throw new BussinessException(401, ResultConst.INVALID_PASSWORD);
+                }
+            } catch (Exception e) {
                 throw new BussinessException(401, ResultConst.INVALID_PASSWORD);
             }
-        } catch (Exception e) {
-            throw new BussinessException(401, ResultConst.INVALID_PASSWORD);
-        }
-        try {
-            // 生成jwt令牌
-            String jwt = JwtUtil.createJWT(UUID.randomUUID().toString(), account, null);
-            // 存入数据库中
+            try {
+                // 生成jwt令牌
+                jwt = JwtUtil.createJWT(UUID.randomUUID().toString(), account, null);
+                // 存入数据库中
 
-            // 返回jwt字符串
-            return jwt;
+            } catch (Exception e) {
+                throw new BussinessException(401, ResultConst.USER_ISDELETE);
+            }
 
-        } catch (Exception e) {
-            throw new BussinessException(401, ResultConst.USER_ISDELETE);
+        } else if (type == 2) { // type == 2 时为学生登录
+
+
+        } else if (type == 3) { // type == 3 时为教师登录
+
         }
+
+
+        // 返回jwt字符串
+        return jwt;
     }
 }

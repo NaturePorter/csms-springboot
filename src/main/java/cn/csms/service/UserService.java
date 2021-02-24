@@ -16,7 +16,8 @@ public interface UserService extends IService<User> {
      * 登录方法
      * @param account
      * @param password
+     * @param type
      * @return 返回登录生成的token令牌
      */
-    String login(String account, String password);
+    String login(String account, String password, int type);
 }
