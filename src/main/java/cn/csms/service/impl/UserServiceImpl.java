@@ -9,9 +9,11 @@ import cn.csms.service.UserService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import jdk.nashorn.internal.parser.Token;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.UUID;
 
 /**
@@ -45,20 +47,14 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             try {
                 // 生成jwt令牌
                 jwt = JwtUtil.createJWT(UUID.randomUUID().toString(), account, null);
-                // 存入数据库中
-
+                // 更新登录时间和token
+                user.setLogintime(new Date());
+                user.setToken(jwt);
+                userService.updateById(user);
             } catch (Exception e) {
                 throw new BussinessException(401, ResultConst.USER_ISDELETE);
             }
-
-        } else if (type == 2) { // type == 2 时为学生登录
-
-
-        } else if (type == 3) { // type == 3 时为教师登录
-
         }
-
-
         // 返回jwt字符串
         return jwt;
     }

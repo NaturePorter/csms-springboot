@@ -26,7 +26,7 @@ public class Grade implements Serializable {
     private Integer id;
 
     /**
-     * 课程名称
+     * 年级名称
      */
     private String name;
 

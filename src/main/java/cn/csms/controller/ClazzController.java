@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2021-02-21
  */
 @RestController
-@RequestMapping("/clazz")
+@RequestMapping("/csms_api")
 public class ClazzController {
 
 }

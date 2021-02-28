@@ -4,19 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b263b9ca-54a8-4a35-a23a-343c4d018d17" name="Default Changelist" comment="登录页面">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/csms/controller/AuthController.java" afterDir="false" />
+    <list default="true" id="b263b9ca-54a8-4a35-a23a-343c4d018d17" name="Default Changelist" comment="菜单栏获取">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/project_error.2021-02-23.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/project_info.2021-02-23.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/project_info.2021-02-24.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/project_info.2021-02-25.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/csms/common/config/FilterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/csms/common/config/ShiroConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/csms/common/utils/HttpContextUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/csms/filter/XSSRequestWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/csms/filter/XssFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/csms/filter/oauth2/OAuth2Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/csms/filter/oauth2/OAuth2Realm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/csms/filter/oauth2/OAuth2Token.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/project_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/project_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/project_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/project_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/base/ResultConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/base/ResultConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/controller/ClazzController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/controller/ClazzController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/controller/ClazzCourseTeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/controller/ClazzCourseTeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/controller/EscoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/controller/EscoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/controller/ExamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/controller/ExamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/controller/GradeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/controller/GradeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/controller/GradeCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/controller/GradeCourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/controller/TeacherController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/entity/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/entity/Grade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/csms/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/csms/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/csms/controller/ClazzController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/csms/controller/ClazzController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/csms/controller/ClazzCourseTeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/csms/controller/ClazzCourseTeacherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/csms/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/csms/controller/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/csms/controller/EscoreController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/csms/controller/EscoreController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/csms/controller/ExamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/csms/controller/ExamController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/csms/controller/GradeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/csms/controller/GradeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/csms/controller/GradeCourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/csms/controller/GradeCourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/csms/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/csms/controller/StudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/csms/controller/TeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/csms/controller/TeacherController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/csms/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/csms/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/csms/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/csms/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/csms/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/csms/entity/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/csms/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/csms/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,12 +92,15 @@
     <option name="jreName" value="#JAVA_HOME" />
   </component>
   <component name="ProjectId" id="1ohhcpGmbxaNHMAXWRw0kIKOCjL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -83,7 +116,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -91,6 +124,8 @@
       <recent name="cn.csms.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Dev\Project\javaProject\csms-springboot\src\main\java\cn\csms\filter" />
+      <recent name="E:\Dev\Project\javaProject\csms-springboot\src\main\java\cn\csms\common\config" />
       <recent name="E:\Dev\Project\javaProject\csms-springboot\src\main\java\cn\csms" />
       <recent name="E:\Dev\Project\javaProject\csms-springboot\src\main\resources" />
     </key>
@@ -113,13 +148,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,7 +196,11 @@
       <workItem from="1614005581624" duration="283000" />
       <workItem from="1614036190107" duration="3195000" />
       <workItem from="1614085869137" duration="2396000" />
-      <workItem from="1614164387440" duration="4753000" />
+      <workItem from="1614164387440" duration="5537000" />
+      <workItem from="1614249505647" duration="1262000" />
+      <workItem from="1614439749839" duration="1859000" />
+      <workItem from="1614483286959" duration="9250000" />
+      <workItem from="1614526473119" duration="620000" />
     </task>
     <task id="LOCAL-00001" summary="项目创建">
       <created>1613895467028</created>
@@ -182,7 +223,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614036323360</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="登录页面">
+      <created>1614182215561</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614182215561</updated>
+    </task>
+    <task id="LOCAL-00005" summary="菜单栏获取">
+      <created>1614439855443</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614439855443</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,17 +256,19 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="项目创建" />
     <MESSAGE value="登录页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录页面" />
+    <MESSAGE value="菜单栏获取" />
+    <option name="LAST_COMMIT_MESSAGE" value="菜单栏获取" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cn/csms/service/impl/UserServiceImpl.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="1" />
+          <line>33</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

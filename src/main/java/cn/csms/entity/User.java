@@ -1,6 +1,8 @@
 package cn.csms.entity;
 
 import java.io.Serializable;
+import java.util.Date;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -44,5 +46,15 @@ public class User implements Serializable {
      * 用户类型，默认2(1为管理员，2为学生，3为老师)
      */
     private Integer type;
+
+    /**
+     * 登录时间
+     */
+    private Date logintime;
+
+    /**
+     * token
+     */
+    private String token;
 
 }
