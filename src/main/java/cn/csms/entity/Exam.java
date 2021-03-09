@@ -44,17 +44,17 @@ public class Exam implements Serializable {
     /**
      * 考试类型,默认1(1为年级统考，2为平时考试)
      */
-    private Boolean type;
+    private Integer type;
 
     /**
      * 年级ID
      */
-    private Integer gradeid;
+    private String gradeid;
 
     /**
      * 班级ID
      */
-    private Integer clazzid;
+    private String clazzid;
 
 
 }

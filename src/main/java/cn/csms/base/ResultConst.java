@@ -35,4 +35,5 @@ public class ResultConst {
     public static final String GET_MENU_SUCC = "获取菜单成功";
 
     public static final String GET_GRADES_SUCC = "获取年级列表成功";
+    public static final String GET_EXAMS_SUUC = "获取考试列表成功";
 }

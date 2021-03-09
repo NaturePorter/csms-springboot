@@ -25,8 +25,6 @@ import java.util.Map;
 
 /**
  * Shiro配置
- *
- * @author YYYY
  */
 @Configuration
 public class ShiroConfig {
@@ -48,14 +46,9 @@ public class ShiroConfig {
         Map<String, Filter> filters = new HashMap<>();
         filters.put("oauth2", new OAuth2Filter());
         shiroFilter.setFilters(filters);
-
         Map<String, String> filterMap = new LinkedHashMap<>();
-        /** 给swagger放行 */
-        //filterMap.put("/swagger/**", "anon");
-        //filterMap.put("/swagger-ui.html", "anon");
         filterMap.put("/csms_api/login", "anon");
         filterMap.put("/**", "oauth2");
-
         shiroFilter.setFilterChainDefinitionMap(filterMap);
 
         return shiroFilter;
